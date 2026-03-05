@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brenda Melgar — Wedding Planner, Productora de Eventos &amp; Speaker Internacional</title>
   <meta name="description" content="Brenda Melgar, CEO de LOVE Guatemala. Wedding Planner, Productora de Eventos y Speaker Internacional con más de 15 años de experiencia transformando visiones en experiencias extraordinarias.">
+  <meta property="og:title" content="Brenda Melgar — Wedding Planner, Productora de Eventos & Speaker Internacional">
+  <meta property="og:description" content="CEO de LOVE Guatemala. Mas de 15 anios transformando visiones en experiencias extraordinarias.">
+  <meta property="og:image" content="fotos/Sobre mi.jpeg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -127,14 +132,14 @@
       <div class="portfolio__grid animate-fade-up">
         <!-- Antigua Guatemala -->
         <div class="portfolio__item portfolio__item--tall" data-category="antigua">
-          <img src="fotos/Antigua Guatemala1.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img">
+          <img src="fotos/Antigua Guatemala1.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Antigua Guatemala</span>
             <h4>Boda Destino</h4>
           </div>
         </div>
         <div class="portfolio__item" data-category="antigua">
-          <img src="fotos/Antigua Guatemala2.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img">
+          <img src="fotos/Antigua Guatemala2.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Antigua Guatemala</span>
             <h4>Ceremonia al Atardecer</h4>
@@ -142,7 +147,7 @@
         </div>
         <!-- Lake Atitlán -->
         <div class="portfolio__item" data-category="lake">
-          <img src="fotos/Lake atitlan1.jpeg" alt="Boda en Lake Atitlán" class="portfolio__img">
+          <img src="fotos/Lake atitlan1.jpeg" alt="Boda en Lake Atitlán" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Lake Atitlán</span>
             <h4>Boda Frente al Lago</h4>
@@ -150,7 +155,7 @@
         </div>
         <!-- Antigua Guatemala -->
         <div class="portfolio__item" data-category="antigua">
-          <img src="fotos/Antigua Guatemala3.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img">
+          <img src="fotos/Antigua Guatemala3.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Antigua Guatemala</span>
             <h4>Recepción Colonial</h4>
@@ -158,7 +163,7 @@
         </div>
         <!-- City -->
         <div class="portfolio__item portfolio__item--wide" data-category="city">
-          <img src="fotos/city1.jpeg" alt="Evento en Ciudad de Guatemala" class="portfolio__img">
+          <img src="fotos/city1.jpeg" alt="Evento en Ciudad de Guatemala" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Ciudad de Guatemala</span>
             <h4>Evento Premium</h4>
@@ -166,7 +171,7 @@
         </div>
         <!-- Lake Atitlán -->
         <div class="portfolio__item" data-category="lake">
-          <img src="fotos/Lake atitlan2.jpeg" alt="Boda en Lake Atitlán" class="portfolio__img">
+          <img src="fotos/Lake atitlan2.jpeg" alt="Boda en Lake Atitlán" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Lake Atitlán</span>
             <h4>Celebración en el Lago</h4>
@@ -174,7 +179,7 @@
         </div>
         <!-- City -->
         <div class="portfolio__item" data-category="city">
-          <img src="fotos/city2.jpeg" alt="Evento en Ciudad de Guatemala" class="portfolio__img">
+          <img src="fotos/city2.jpeg" alt="Evento en Ciudad de Guatemala" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Ciudad de Guatemala</span>
             <h4>Gala Corporativa</h4>
@@ -182,7 +187,7 @@
         </div>
         <!-- Antigua Guatemala -->
         <div class="portfolio__item" data-category="antigua">
-          <img src="fotos/antigua guatemala4.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img">
+          <img src="fotos/antigua guatemala4.jpeg" alt="Boda en Antigua Guatemala" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Antigua Guatemala</span>
             <h4>Detalles de Ensueño</h4>
@@ -190,7 +195,7 @@
         </div>
         <!-- Lake Atitlán -->
         <div class="portfolio__item" data-category="lake">
-          <img src="fotos/lake atitlan3.jpeg" alt="Boda en Lake Atitlán" class="portfolio__img">
+          <img src="fotos/lake atitlan3.jpeg" alt="Boda en Lake Atitlán" class="portfolio__img" loading="lazy">
           <div class="portfolio__overlay">
             <span class="portfolio__overlay-label">Lake Atitlán</span>
             <h4>Paisaje y Amor</h4>
@@ -270,27 +275,27 @@
         </div>
         <div class="speaking__image-wrap animate-fade-up">
           <div class="speaking__image">
-            <img src="fotos/Weddx segunda edicion Guatemala 3 portada.jpg" alt="WeddX — Congreso de Bodas" class="speaking__img">
+            <img src="fotos/Weddx segunda edicion Guatemala 3 portada.jpg" alt="WeddX — Congreso de Bodas" class="speaking__img" loading="lazy">
           </div>
           <div class="speaking__gallery">
             <div class="speaking__gallery-item">
-              <img src="fotos/Weddx primera Edicion Guatemala.JPG" alt="WeddX Primera Edición Guatemala" class="speaking__gallery-img">
+              <img src="fotos/Weddx primera Edicion Guatemala.JPG" alt="WeddX Primera Edición Guatemala" class="speaking__gallery-img" loading="lazy">
               <p class="speaking__gallery-label">WeddX 1era Edición Guatemala</p>
             </div>
             <div class="speaking__gallery-item">
-              <img src="fotos/Weddx primera Edicion Guatemala 2.JPG" alt="WeddX Primera Edición Guatemala" class="speaking__gallery-img">
+              <img src="fotos/Weddx primera Edicion Guatemala 2.JPG" alt="WeddX Primera Edición Guatemala" class="speaking__gallery-img" loading="lazy">
               <p class="speaking__gallery-label">WeddX 1era Edición Guatemala</p>
             </div>
             <div class="speaking__gallery-item">
-              <img src="fotos/Weddx segunda Edicion Guatemala 1.jpeg" alt="WeddX Segunda Edición Guatemala" class="speaking__gallery-img">
+              <img src="fotos/Weddx segunda Edicion Guatemala 1.jpeg" alt="WeddX Segunda Edición Guatemala" class="speaking__gallery-img" loading="lazy">
               <p class="speaking__gallery-label">WeddX 2da Edición Guatemala</p>
             </div>
             <div class="speaking__gallery-item">
-              <img src="fotos/Weddx segunda edicion Guatemala 2.JPG" alt="WeddX Segunda Edición Guatemala" class="speaking__gallery-img">
+              <img src="fotos/Weddx segunda edicion Guatemala 2.JPG" alt="WeddX Segunda Edición Guatemala" class="speaking__gallery-img" loading="lazy">
               <p class="speaking__gallery-label">WeddX 2da Edición Guatemala</p>
             </div>
             <div class="speaking__gallery-item">
-              <img src="fotos/Weddx Congreso Uruguay.jpg" alt="WeddX Congreso Uruguay" class="speaking__gallery-img">
+              <img src="fotos/Weddx Congreso Uruguay.jpg" alt="WeddX Congreso Uruguay" class="speaking__gallery-img" loading="lazy">
               <p class="speaking__gallery-label">WeddX Uruguay</p>
             </div>
           </div>
@@ -310,63 +315,63 @@
       </div>
       <div class="alumnos__grid animate-fade-up">
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Panama.JPG" alt="Curso en Panamá" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Panama.JPG" alt="Curso en Panamá" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Panamá</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso El Salvador.jpeg" alt="Curso en El Salvador" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso El Salvador.jpeg" alt="Curso en El Salvador" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">El Salvador</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso El Salvador 2.jpeg" alt="Curso en El Salvador" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso El Salvador 2.jpeg" alt="Curso en El Salvador" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">El Salvador</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/curso Honduras.jpeg" alt="Curso en Honduras" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/curso Honduras.jpeg" alt="Curso en Honduras" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Honduras</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Honduras 2.jpeg" alt="Curso en Honduras" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Honduras 2.jpeg" alt="Curso en Honduras" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Honduras</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Honduras 3.jpeg" alt="Curso en Honduras" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Honduras 3.jpeg" alt="Curso en Honduras" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Honduras</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/curso Nicaragua.jpeg" alt="Curso en Nicaragua" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/curso Nicaragua.jpeg" alt="Curso en Nicaragua" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Nicaragua</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Nicaragua 2.jpeg" alt="Curso en Nicaragua" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Nicaragua 2.jpeg" alt="Curso en Nicaragua" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Nicaragua</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Nicaragua 3.jpeg" alt="Curso en Nicaragua" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Nicaragua 3.jpeg" alt="Curso en Nicaragua" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Nicaragua</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Nicaragua 4.jpeg" alt="Curso en Nicaragua" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Nicaragua 4.jpeg" alt="Curso en Nicaragua" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Nicaragua</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso chile.jpeg" alt="Curso en Chile" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso chile.jpeg" alt="Curso en Chile" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Chile</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/curso chile 2.jpeg" alt="Curso en Chile" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/curso chile 2.jpeg" alt="Curso en Chile" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Chile</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Punta del Este Uruguay.jpg" alt="Curso en Punta del Este, Uruguay" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Punta del Este Uruguay.jpg" alt="Curso en Punta del Este, Uruguay" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Punta del Este, Uruguay</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/curso USA.jpeg" alt="Curso en Estados Unidos" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/curso USA.jpeg" alt="Curso en Estados Unidos" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Estados Unidos</p>
         </div>
         <div class="alumnos__item">
-          <div class="alumnos__photo"><img src="fotos/Curso Ecuador.jpeg" alt="Curso en Ecuador" class="alumnos__img"></div>
+          <div class="alumnos__photo"><img src="fotos/Curso Ecuador.jpeg" alt="Curso en Ecuador" class="alumnos__img" loading="lazy"></div>
           <p class="alumnos__location">Ecuador</p>
         </div>
       </div>
@@ -386,17 +391,17 @@
       <div class="book animate-fade-up">
         <div class="book__gallery">
           <div class="book__main-image" id="bookMain1">
-            <img src="fotos/Libro 1.1.jpeg" alt="Weddpreneur — Portada" class="book__img">
+            <img src="fotos/Libro 1.1.jpeg" alt="Weddpreneur — Portada" class="book__img" loading="lazy">
           </div>
           <div class="book__thumbs book__thumbs--3">
             <button class="book__thumb active" data-book="1" data-index="0" data-src="fotos/Libro 1.1.jpeg" data-alt="Weddpreneur — Portada">
-              <img src="fotos/Libro 1.1.jpeg" alt="Portada" class="book__thumb-img">
+              <img src="fotos/Libro 1.1.jpeg" alt="Portada" class="book__thumb-img" loading="lazy">
             </button>
             <button class="book__thumb" data-book="1" data-index="1" data-src="fotos/libro 1.2.jpeg" data-alt="Weddpreneur — Interior">
-              <img src="fotos/libro 1.2.jpeg" alt="Interior" class="book__thumb-img">
+              <img src="fotos/libro 1.2.jpeg" alt="Interior" class="book__thumb-img" loading="lazy">
             </button>
             <button class="book__thumb" data-book="1" data-index="2" data-src="fotos/libro 1.3.jpeg" data-alt="Weddpreneur — Contraportada">
-              <img src="fotos/libro 1.3.jpeg" alt="Contraportada" class="book__thumb-img">
+              <img src="fotos/libro 1.3.jpeg" alt="Contraportada" class="book__thumb-img" loading="lazy">
             </button>
           </div>
         </div>
@@ -418,20 +423,20 @@
       <div class="book book--reverse animate-fade-up">
         <div class="book__gallery">
           <div class="book__main-image" id="bookMain2">
-            <img src="fotos/libro 2.1.jpeg" alt="101 Historias de Bodas — Portada" class="book__img">
+            <img src="fotos/libro 2.1.jpeg" alt="101 Historias de Bodas — Portada" class="book__img" loading="lazy">
           </div>
           <div class="book__thumbs">
             <button class="book__thumb active" data-book="2" data-index="0" data-src="fotos/libro 2.1.jpeg" data-alt="101 Historias de Bodas — Portada">
-              <img src="fotos/libro 2.1.jpeg" alt="Portada" class="book__thumb-img">
+              <img src="fotos/libro 2.1.jpeg" alt="Portada" class="book__thumb-img" loading="lazy">
             </button>
             <button class="book__thumb" data-book="2" data-index="1" data-src="fotos/libro 2.2.jpeg" data-alt="101 Historias de Bodas — Interior 1">
-              <img src="fotos/libro 2.2.jpeg" alt="Interior 1" class="book__thumb-img">
+              <img src="fotos/libro 2.2.jpeg" alt="Interior 1" class="book__thumb-img" loading="lazy">
             </button>
             <button class="book__thumb" data-book="2" data-index="2" data-src="fotos/libro 2.3.jpeg" data-alt="101 Historias de Bodas — Interior 2">
-              <img src="fotos/libro 2.3.jpeg" alt="Interior 2" class="book__thumb-img">
+              <img src="fotos/libro 2.3.jpeg" alt="Interior 2" class="book__thumb-img" loading="lazy">
             </button>
             <button class="book__thumb" data-book="2" data-index="3" data-src="fotos/libro 2.4.jpeg" data-alt="101 Historias de Bodas — Contraportada">
-              <img src="fotos/libro 2.4.jpeg" alt="Contraportada" class="book__thumb-img">
+              <img src="fotos/libro 2.4.jpeg" alt="Contraportada" class="book__thumb-img" loading="lazy">
             </button>
           </div>
         </div>

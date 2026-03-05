@@ -152,15 +152,33 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
       const original = btn.textContent;
-      btn.textContent = 'Mensaje enviado';
+      btn.textContent = 'Enviando...';
       btn.disabled = true;
       btn.style.opacity = '0.6';
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.disabled = false;
-        btn.style.opacity = '';
+
+      const data = new URLSearchParams({
+        nombre: form.nombre.value,
+        email: form.email.value,
+        servicio: form.servicio.value,
+        mensaje: form.mensaje.value
+      });
+
+      fetch('api/contacto.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: data.toString()
+      }).then(() => {
+        btn.textContent = 'Mensaje enviado';
         form.reset();
-      }, 3000);
+      }).catch(() => {
+        btn.textContent = 'Error al enviar';
+      }).finally(() => {
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.disabled = false;
+          btn.style.opacity = '';
+        }, 3000);
+      });
     });
   }
 
@@ -336,20 +354,20 @@ document.addEventListener('DOMContentLoaded', () => {
     speakingForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const record = {
-        tipo: 'speaking',
+      const data = new URLSearchParams({
         nombre: document.getElementById('spkNombre').value,
         email: document.getElementById('spkEmail').value,
         telefono: document.getElementById('spkTelefono').value,
         pais: document.getElementById('spkPais').value,
-        fecha_evento: document.getElementById('spkFecha').value,
-        asistentes: document.getElementById('spkAsistentes').value,
-        fecha_solicitud: new Date().toISOString()
-      };
+        fecha: document.getElementById('spkFecha').value,
+        asistentes: document.getElementById('spkAsistentes').value
+      });
 
-      const requests = JSON.parse(localStorage.getItem('bm_speaking') || '[]');
-      requests.push(record);
-      localStorage.setItem('bm_speaking', JSON.stringify(requests));
+      fetch('api/speaking.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: data.toString()
+      }).catch(function(){});
 
       speakingForm.classList.add('hidden');
       speakingModal.querySelector('#speakingHeader').classList.add('hidden');
