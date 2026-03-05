@@ -687,7 +687,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
   <script>
     fetch('api/visita.php', {
       method: 'POST',
