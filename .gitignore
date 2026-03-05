@@ -1,7 +1,6 @@
 # Environment and config
 .env
 *.log
-config/db.php
 admin/generar_password.php
 
 # OS files
