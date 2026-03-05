@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS contacto (
     servicio VARCHAR(100),
     mensaje TEXT,
     ip VARCHAR(45),
+    estado ENUM('nuevo','contactado','aceptado','descartado') NOT NULL DEFAULT 'nuevo',
     fecha DATETIME NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -38,5 +39,6 @@ CREATE TABLE IF NOT EXISTS speaking (
     fecha_evento DATE,
     asistentes INT DEFAULT 0,
     ip VARCHAR(45),
+    estado ENUM('nuevo','contactado','aceptado','descartado') NOT NULL DEFAULT 'nuevo',
     fecha DATETIME NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
