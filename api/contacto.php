@@ -25,6 +25,20 @@ try {
     $db = getDB();
     $stmt = $db->prepare('INSERT INTO contacto (nombre, email, servicio, mensaje, ip, fecha) VALUES (?, ?, ?, ?, ?, NOW())');
     $stmt->execute([$nombre, $email, $servicio, $mensaje, $ip]);
+
+    // Notificacion por correo
+    $asunto = "Nuevo mensaje de contacto: $nombre";
+    $cuerpo  = "Nuevo mensaje desde el formulario de contacto\n";
+    $cuerpo .= "========================================\n\n";
+    $cuerpo .= "Nombre:   $nombre\n";
+    $cuerpo .= "Email:    $email\n";
+    $cuerpo .= "Servicio: " . ($servicio ?: 'No especificado') . "\n";
+    $cuerpo .= "Mensaje:\n$mensaje\n\n";
+    $cuerpo .= "IP: $ip\n";
+    $cuerpo .= "Fecha: " . date('Y-m-d H:i:s') . "\n";
+
+    @sendMail(NOTIFY_TO, $asunto, $cuerpo, $email);
+
     echo json_encode(['ok' => true]);
 } catch (PDOException $e) {
     http_response_code(500);

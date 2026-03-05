@@ -27,6 +27,22 @@ try {
     $db = getDB();
     $stmt = $db->prepare('INSERT INTO speaking (nombre, email, telefono, pais, fecha_evento, asistentes, ip, fecha) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())');
     $stmt->execute([$nombre, $email, $telefono, $pais, $fecha_evento, $asistentes, $ip]);
+
+    // Notificacion por correo
+    $asunto = "Nueva solicitud de speaking: $nombre";
+    $cuerpo  = "Nueva solicitud de speaking/mentoria\n";
+    $cuerpo .= "========================================\n\n";
+    $cuerpo .= "Nombre:         $nombre\n";
+    $cuerpo .= "Email:          $email\n";
+    $cuerpo .= "Telefono:       " . ($telefono ?: '-') . "\n";
+    $cuerpo .= "Pais:           " . ($pais ?: '-') . "\n";
+    $cuerpo .= "Fecha evento:   " . ($fecha_evento ?: '-') . "\n";
+    $cuerpo .= "Asistentes:     " . ($asistentes ?: '-') . "\n\n";
+    $cuerpo .= "IP: $ip\n";
+    $cuerpo .= "Fecha: " . date('Y-m-d H:i:s') . "\n";
+
+    @sendMail(NOTIFY_TO, $asunto, $cuerpo, $email);
+
     echo json_encode(['ok' => true]);
 } catch (PDOException $e) {
     http_response_code(500);
