@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 $pagina = isset($_POST['pagina']) ? substr($_POST['pagina'], 0, 255) : '/';
-$ip = $_SERVER['REMOTE_ADDR'] ?? '';
+$ip = getClientIP();
 $user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? substr($_SERVER['HTTP_USER_AGENT'], 0, 500) : '';
 $referrer = isset($_SERVER['HTTP_REFERER']) ? substr($_SERVER['HTTP_REFERER'], 0, 500) : '';
 

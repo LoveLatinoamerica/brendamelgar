@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $libro = isset($_POST['libro']) ? substr($_POST['libro'], 0, 100) : '';
 $email = isset($_POST['email']) ? substr($_POST['email'], 0, 255) : '';
 $nombre = isset($_POST['nombre']) ? substr($_POST['nombre'], 0, 255) : '';
-$ip = $_SERVER['REMOTE_ADDR'] ?? '';
+$ip = getClientIP();
 
 try {
     $db = getDB();

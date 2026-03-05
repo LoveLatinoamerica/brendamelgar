@@ -13,7 +13,7 @@ $nombre = isset($_POST['nombre']) ? substr($_POST['nombre'], 0, 255) : '';
 $email = isset($_POST['email']) ? substr($_POST['email'], 0, 255) : '';
 $servicio = isset($_POST['servicio']) ? substr($_POST['servicio'], 0, 100) : '';
 $mensaje = isset($_POST['mensaje']) ? substr($_POST['mensaje'], 0, 5000) : '';
-$ip = $_SERVER['REMOTE_ADDR'] ?? '';
+$ip = getClientIP();
 
 if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
